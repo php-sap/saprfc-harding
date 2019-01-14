@@ -1,0 +1,55 @@
+{
+  "name": "php-sap/saprfc-harding",
+  "description": "PHP/SAP implementation for Hardings sapnwrfc module. See https://php-sap.github.io for details.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Gregor J.",
+      "email": "gregor-j@users.noreply.github.com"
+    }
+  ],
+  "support": {
+    "docs": "https://php-sap.github.io",
+    "issues": "https://github.com/php-sap/saprfc-harding/issues",
+    "source": "https://github.com/php-sap/saprfc-harding"
+  },
+  "keywords": [
+    "phpsap",
+    "php-sap",
+    "sap",
+    "sapnwrfc",
+    "saprfc",
+    "sap-rfc",
+    "rfc",
+    "remote function call",
+    "harding"
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "~5.5.0",
+    "ext-sapnwrfc": "*",
+    "phpsap/interfaces": "dev-master",
+    "phpsap/common": "dev-master"
+  },
+  "require-dev": {
+    "ext-json": "*",
+    "phpunit/phpunit": "^4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "phpsap\\saprfc\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "tests\\phpsap\\saprfc\\": "tests/"
+    }
+  },
+  "scripts": {
+    "tests": "vendor/bin/phpunit"
+  },
+  "scripts-descriptions": {
+    "tests": "Run all unit tests."
+  }
+}
