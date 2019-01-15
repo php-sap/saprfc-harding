@@ -1,6 +1,6 @@
 <?php
 /**
- * File src/SapRfcConfigBTest.php
+ * File tests/SapRfcConfigBTest.php
  *
  * Test config type B.
  *
