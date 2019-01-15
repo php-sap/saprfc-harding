@@ -44,7 +44,7 @@ class SapRfcConnectionTest extends AbstractConnectionTestCase
         //compile expected config
         $expectedConfig = [];
         foreach ($this->getSampleSapConfig() as $key => $value) {
-            $expectedConfig[(strtoupper($key))] = $value;
+            $expectedConfig[strtoupper($key)] = $value;
         }
         static::mock('sapnwrfc::__construct', function ($config) use ($self, $expectedConfig) {
             if (!is_array($config) && $config !== $expectedConfig) {
@@ -83,7 +83,7 @@ class SapRfcConnectionTest extends AbstractConnectionTestCase
         //compile expected config
         $expectedConfig = [];
         foreach ($this->getSampleSapConfig() as $key => $value) {
-            $expectedConfig[(strtoupper($key))] = $value;
+            $expectedConfig[strtoupper($key)] = $value;
         }
         static::mock('sapnwrfc::__construct', function ($config) use ($self, $expectedConfig) {
             if (!is_array($config) && $config !== $expectedConfig) {
@@ -115,7 +115,7 @@ class SapRfcConnectionTest extends AbstractConnectionTestCase
         //compile expected config
         $expectedConfig = [];
         foreach ($this->getSampleSapConfig() as $key => $value) {
-            $expectedConfig[(strtoupper($key))] = $value;
+            $expectedConfig[strtoupper($key)] = $value;
         }
         static::mock('sapnwrfc::__construct', function ($config) use ($self, $expectedConfig) {
             if (!is_array($config) && $config !== $expectedConfig) {
