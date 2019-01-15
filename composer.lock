@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f20eb874963bd44b0bb44b3e3c3ce948",
+    "content-hash": "98422c7a8d207d91125bf25312eda9a1",
     "packages": [
         {
             "name": "kba-team/typecast",
@@ -442,22 +442,22 @@
         },
         {
             "name": "phpsap/integration-tests",
-            "version": "dev-master",
+            "version": "dev-php5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-sap/integration-tests.git",
-                "reference": "05774e97e11484b10f1e91298e0b009da88ad5fa"
+                "reference": "d326bf54a9ef8e7dcf93173c7d0a8e8e0fd54e64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-sap/integration-tests/zipball/05774e97e11484b10f1e91298e0b009da88ad5fa",
-                "reference": "05774e97e11484b10f1e91298e0b009da88ad5fa",
+                "url": "https://api.github.com/repos/php-sap/integration-tests/zipball/d326bf54a9ef8e7dcf93173c7d0a8e8e0fd54e64",
+                "reference": "d326bf54a9ef8e7dcf93173c7d0a8e8e0fd54e64",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "kba-team/memory-container": "^1.0",
-                "php": "^5.5|^7.0",
+                "php": "^5.5",
                 "phpsap/common": "dev-master",
                 "phpsap/interfaces": "dev-master",
                 "phpunit/phpunit": "^4.8"
@@ -479,7 +479,7 @@
                 }
             ],
             "description": "PHP/SAP integration tests.",
-            "time": "2019-01-15T11:13:55+00:00"
+            "time": "2019-01-15T13:52:36+00:00"
         },
         {
             "name": "phpspec/prophecy",
