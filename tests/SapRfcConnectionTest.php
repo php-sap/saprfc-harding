@@ -47,7 +47,7 @@ class SapRfcConnectionTest extends AbstractConnectionTestCase
             $expectedConfig[strtoupper($key)] = $value;
         }
         static::mock('sapnwrfc::__construct', function ($config) use ($self, $expectedConfig) {
-            if (!is_array($config) && $config !== $expectedConfig) {
+            if ($config !== $expectedConfig) {
                 throw new \Exception('mock received invalid config array!');
             }
             //set flag that a connection has been established
@@ -86,7 +86,7 @@ class SapRfcConnectionTest extends AbstractConnectionTestCase
             $expectedConfig[strtoupper($key)] = $value;
         }
         static::mock('sapnwrfc::__construct', function ($config) use ($self, $expectedConfig) {
-            if (!is_array($config) && $config !== $expectedConfig) {
+            if ($config !== $expectedConfig) {
                 throw new \Exception('mock received invalid config array!');
             }
             //set flag that a connection has been established
@@ -118,7 +118,7 @@ class SapRfcConnectionTest extends AbstractConnectionTestCase
             $expectedConfig[strtoupper($key)] = $value;
         }
         static::mock('sapnwrfc::__construct', function ($config) use ($self, $expectedConfig) {
-            if (!is_array($config) && $config !== $expectedConfig) {
+            if ($config !== $expectedConfig) {
                 throw new \Exception('mock received invalid config array!');
             }
             //set flag that a connection has been established

@@ -53,7 +53,7 @@ class SapRfcFunctionTest extends AbstractFunctionTestCase
             $expectedConfig[strtoupper($key)] = $value;
         }
         static::mock('sapnwrfc::__construct', function ($config) use ($self, $expectedConfig) {
-            if (!is_array($config) && $config !== $expectedConfig) {
+            if ($config !== $expectedConfig) {
                 throw new \Exception('mock received invalid config array!');
             }
             //set flag that a connection has been established
@@ -100,7 +100,7 @@ class SapRfcFunctionTest extends AbstractFunctionTestCase
             $expectedConfig[strtoupper($key)] = $value;
         }
         static::mock('sapnwrfc::__construct', function ($config) use ($self, $expectedConfig) {
-            if (!is_array($config) && $config !== $expectedConfig) {
+            if ($config !== $expectedConfig) {
                 throw new \Exception('mock received invalid config array!');
             }
             //set flag that a connection has been established
@@ -133,7 +133,7 @@ class SapRfcFunctionTest extends AbstractFunctionTestCase
             $expectedConfig[strtoupper($key)] = $value;
         }
         static::mock('sapnwrfc::__construct', function ($config) use ($self, $expectedConfig) {
-            if (!is_array($config) && $config !== $expectedConfig) {
+            if ($config !== $expectedConfig) {
                 throw new \Exception('mock received invalid config array!');
             }
             //set flag that a connection has been established
@@ -199,7 +199,7 @@ class SapRfcFunctionTest extends AbstractFunctionTestCase
             $expectedConfig[strtoupper($key)] = $value;
         }
         static::mock('sapnwrfc::__construct', function ($config) use ($self, $expectedConfig) {
-            if (!is_array($config) && $config !== $expectedConfig) {
+            if ($config !== $expectedConfig) {
                 throw new \Exception('mock received invalid config array!');
             }
             //set flag that a connection has been established
@@ -225,9 +225,6 @@ class SapRfcFunctionTest extends AbstractFunctionTestCase
             return new \sapnwrfc_function($name);
         });
         static::mock('sapnwrfc_function::invoke', function ($params) use ($self) {
-            if ($self->function !== 'Z_MC_GET_DATE_TIME') {
-                throw new \Exception('function not correctly initialized!');
-            }
             throw new \Exception('mock function call exception!');
         });
     }
