@@ -51,12 +51,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-sap/common.git",
-                "reference": "aea080e5e1789154450e6f9ca41715b59180def2"
+                "reference": "694b3efb053d78e5c147ed0b7eaec89a72ca5847"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-sap/common/zipball/aea080e5e1789154450e6f9ca41715b59180def2",
-                "reference": "aea080e5e1789154450e6f9ca41715b59180def2",
+                "url": "https://api.github.com/repos/php-sap/common/zipball/694b3efb053d78e5c147ed0b7eaec89a72ca5847",
+                "reference": "694b3efb053d78e5c147ed0b7eaec89a72ca5847",
                 "shasum": ""
             },
             "require": {
@@ -95,7 +95,7 @@
                 "exceptions",
                 "php-sap"
             ],
-            "time": "2019-01-10T14:56:38+00:00"
+            "time": "2019-01-15T14:40:28+00:00"
         },
         {
             "name": "phpsap/interfaces",
@@ -103,12 +103,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-sap/interfaces.git",
-                "reference": "cf6b22e4629847f0f38b75d63f94a7b9dccbbbc7"
+                "reference": "e3f76da855249726369710f5f4c7f1c78c1ef026"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-sap/interfaces/zipball/cf6b22e4629847f0f38b75d63f94a7b9dccbbbc7",
-                "reference": "cf6b22e4629847f0f38b75d63f94a7b9dccbbbc7",
+                "url": "https://api.github.com/repos/php-sap/interfaces/zipball/e3f76da855249726369710f5f4c7f1c78c1ef026",
+                "reference": "e3f76da855249726369710f5f4c7f1c78c1ef026",
                 "shasum": ""
             },
             "require": {
@@ -139,7 +139,7 @@
                 "interfaces",
                 "php-sap"
             ],
-            "time": "2019-01-04T09:05:14+00:00"
+            "time": "2019-01-15T14:38:46+00:00"
         },
         {
             "name": "psr/container",
