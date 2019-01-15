@@ -39,5 +39,9 @@ class SapRfcConfigB extends AbstractConfigB
         'TRACE'     => false
     ];
 
+    /**
+     * Common code for connection configuration. Implements methods of
+     * phpsap\classes\AbstractConfigContainer.
+     */
     use SapRfcConfigTrait;
 }

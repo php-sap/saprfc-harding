@@ -16,7 +16,8 @@ use phpsap\exceptions\IncompleteConfigException;
 /**
  * Trait SapRfcConfigTrait
  *
- * Common code for connection configuration.
+ * Common code for connection configuration. Implements methods of
+ * phpsap\classes\AbstractConfigContainer.
  *
  * @package phpsap\saprfc
  * @author  Gregor J.

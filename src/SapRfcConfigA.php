@@ -25,6 +25,9 @@ use phpsap\classes\AbstractConfigA;
  */
 class SapRfcConfigA extends AbstractConfigA
 {
+    /**
+     * @var array list all connection parameters available
+     */
     protected static $conParamAvail = [
         'ASHOST'    => true,
         'SYSNR'     => true,
@@ -37,5 +40,9 @@ class SapRfcConfigA extends AbstractConfigA
         'TRACE'     => false
     ];
 
+    /**
+     * Common code for connection configuration. Implements methods of
+     * phpsap\classes\AbstractConfigContainer.
+     */
     use SapRfcConfigTrait;
 }
