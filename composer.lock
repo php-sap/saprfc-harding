@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cfde807fd67e424bc910f89dd7549e0a",
+    "content-hash": "f20eb874963bd44b0bb44b3e3c3ce948",
     "packages": [
         {
             "name": "kba-team/typecast",
@@ -247,6 +247,54 @@
             "time": "2015-06-14T21:17:01+00:00"
         },
         {
+            "name": "kba-team/memory-container",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/the-kbA-team/memory-container.git",
+                "reference": "38bfdbeb64d3e4cc2c0f21bc7c09e325e50f8b87"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/the-kbA-team/memory-container/zipball/38bfdbeb64d3e4cc2c0f21bc7c09e325e50f8b87",
+                "reference": "38bfdbeb64d3e4cc2c0f21bc7c09e325e50f8b87",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5|^7.0",
+                "psr/container": "^1.0"
+            },
+            "provide": {
+                "psr/container": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "kbATeam\\MemoryContainer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gregor J."
+                }
+            ],
+            "description": "PSR-11 container storing its values in memory and offering a singleton access.",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "in-memory",
+                "singleton"
+            ],
+            "time": "2019-01-11T11:24:37+00:00"
+        },
+        {
             "name": "phpdocumentor/reflection-common",
             "version": "1.0.1",
             "source": {
@@ -391,6 +439,47 @@
                 }
             ],
             "time": "2017-06-03T08:32:36+00:00"
+        },
+        {
+            "name": "phpsap/integration-tests",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-sap/integration-tests.git",
+                "reference": "05774e97e11484b10f1e91298e0b009da88ad5fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-sap/integration-tests/zipball/05774e97e11484b10f1e91298e0b009da88ad5fa",
+                "reference": "05774e97e11484b10f1e91298e0b009da88ad5fa",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "kba-team/memory-container": "^1.0",
+                "php": "^5.5|^7.0",
+                "phpsap/common": "dev-master",
+                "phpsap/interfaces": "dev-master",
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "phpsap\\IntegrationTests\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gregor J.",
+                    "email": "gregor-j@users.noreply.github.com"
+                }
+            ],
+            "description": "PHP/SAP integration tests.",
+            "time": "2019-01-15T11:13:55+00:00"
         },
         {
             "name": "phpspec/prophecy",
@@ -1376,7 +1465,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "phpsap/interfaces": 20,
-        "phpsap/common": 20
+        "phpsap/common": 20,
+        "phpsap/integration-tests": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

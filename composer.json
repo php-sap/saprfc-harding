@@ -34,7 +34,8 @@
   },
   "require-dev": {
     "ext-json": "*",
-    "phpunit/phpunit": "^4.8"
+    "phpunit/phpunit": "^4.8",
+    "phpsap/integration-tests": "dev-master"
   },
   "autoload": {
     "psr-4": {
