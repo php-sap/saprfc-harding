@@ -2,7 +2,7 @@
 /**
  * File tests/SapRfcConnectionTest.php
  *
- * DESCRIPTION
+ * Test connection class.
  *
  * @package saprfc-harding
  * @author  Gregor J.
@@ -16,7 +16,7 @@ use phpsap\IntegrationTests\AbstractConnectionTestCase;
 /**
  * Class tests\phpsap\saprfc\SapRfcConnectionTest
  *
- * DESCRIPTION
+ * Test connection class.
  *
  * @package tests\phpsap\saprfc
  * @author  Gregor J.
