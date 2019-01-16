@@ -33,8 +33,8 @@ class SapRfcConfigB extends AbstractConfigB
         'USER'      => true,
         'PASSWD'    => true,
         'MSHOST'    => true,
-        'R3NAME'    => true,
-        'GROUP'     => true,
+        'R3NAME'    => false,
+        'GROUP'     => false,
         'LANG'      => false,
         'TRACE'     => false
     ];
