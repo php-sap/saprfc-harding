@@ -6,14 +6,11 @@
   "authors": [
     {
       "name": "Gregor J.",
-      "email": "gregor-j@users.noreply.github.com"
+      "email": "gregor-j@users.noreply.github.com",
+      "role": "developer"
     }
   ],
-  "support": {
-    "docs": "https://php-sap.github.io",
-    "issues": "https://github.com/php-sap/saprfc-harding/issues",
-    "source": "https://github.com/php-sap/saprfc-harding"
-  },
+  "homepage": "https://php-sap.github.io",
   "keywords": [
     "phpsap",
     "php-sap",
@@ -25,17 +22,24 @@
     "remote function call",
     "harding"
   ],
+  "provide": {
+    "php-sap/interfaces": "~1.0.0"
+  },
+  "conflict": {
+    "php-sap/saprfc-koucky": "*",
+    "kba-team/php-sapnwrfc-harding": "*"
+  },
   "minimum-stability": "stable",
   "require": {
     "php": "~5.5.0",
     "ext-sapnwrfc": "*",
-    "phpsap/interfaces": "dev-master",
-    "phpsap/common": "dev-master"
+    "php-sap/interfaces": "^1.0",
+    "php-sap/common": "^1.0"
   },
   "require-dev": {
     "ext-json": "*",
     "phpunit/phpunit": "^4.8",
-    "phpsap/integration-tests": "dev-php5"
+    "php-sap/integration-tests": "^1.0"
   },
   "autoload": {
     "psr-4": {
