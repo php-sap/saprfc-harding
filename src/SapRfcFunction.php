@@ -28,6 +28,11 @@ use phpsap\exceptions\UnknownFunctionException;
 class SapRfcFunction extends AbstractFunction
 {
     /**
+     * @var \sapnwrfc
+     */
+    protected $connection;
+
+    /**
      * @var \sapnwrfc_function
      */
     protected $function;
@@ -51,9 +56,8 @@ class SapRfcFunction extends AbstractFunction
      */
     protected function execute()
     {
-        $function = $this->getFunction();
         try {
-            $result = $function->invoke($this->params);
+            $result = $this->function->invoke($this->params);
         } catch (\Exception $exception) {
             throw new FunctionCallException(sprintf(
                 'Function call %s failed: %s',
@@ -67,22 +71,19 @@ class SapRfcFunction extends AbstractFunction
     /**
      * Lookup SAP remote function and return an module class instance of it.
      * @return \sapnwrfc_function
-     * @throws \phpsap\exceptions\FunctionCallException
+     * @throws \phpsap\exceptions\UnknownFunctionException
      */
     protected function getFunction()
     {
-        if ($this->function === null) {
-            try {
-                $this->function = $this->connection->function_lookup($this->getName());
-            } catch (\Exception $exception) {
-                throw new UnknownFunctionException(sprintf(
-                    'Unknown function %s: %s',
-                    $this->getName(),
-                    $exception->getMessage()
-                ), 0, $exception);
-            }
+        try {
+            return $this->connection->function_lookup($this->getName());
+        } catch (\Exception $exception) {
+            throw new UnknownFunctionException(sprintf(
+                'Unknown function %s: %s',
+                $this->getName(),
+                $exception->getMessage()
+            ), 0, $exception);
         }
-        return $this->function;
     }
 
     /**

@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "php-sap/common",
-            "version": "v1.0.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-sap/common.git",
-                "reference": "fc07039445f1ee2e2fc83bbd08a6c336ccf9ac5f"
+                "reference": "bf56c9bdc6f079a1c50781f9b2b9e2b223ee5ec2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-sap/common/zipball/fc07039445f1ee2e2fc83bbd08a6c336ccf9ac5f",
-                "reference": "fc07039445f1ee2e2fc83bbd08a6c336ccf9ac5f",
+                "url": "https://api.github.com/repos/php-sap/common/zipball/bf56c9bdc6f079a1c50781f9b2b9e2b223ee5ec2",
+                "reference": "bf56c9bdc6f079a1c50781f9b2b9e2b223ee5ec2",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,7 @@
                 "PHPSAP",
                 "php-sap"
             ],
-            "time": "2019-01-16T09:40:56+00:00"
+            "time": "2019-01-16T15:10:40+00:00"
         },
         {
             "name": "php-sap/interfaces",
@@ -260,16 +260,16 @@
         },
         {
             "name": "php-sap/integration-tests",
-            "version": "v1.0.0",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-sap/integration-tests.git",
-                "reference": "bdabcf6e61c7957ec33823e13e004688e240a664"
+                "reference": "68df4cde3a6caf8ededed50eed772c97e1c2f82b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-sap/integration-tests/zipball/bdabcf6e61c7957ec33823e13e004688e240a664",
-                "reference": "bdabcf6e61c7957ec33823e13e004688e240a664",
+                "url": "https://api.github.com/repos/php-sap/integration-tests/zipball/68df4cde3a6caf8ededed50eed772c97e1c2f82b",
+                "reference": "68df4cde3a6caf8ededed50eed772c97e1c2f82b",
                 "shasum": ""
             },
             "require": {
@@ -299,7 +299,7 @@
             ],
             "description": "PHP/SAP integration tests.",
             "homepage": "https://php-sap.github.io/",
-            "time": "2019-01-16T10:02:46+00:00"
+            "time": "2019-01-16T15:32:21+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
