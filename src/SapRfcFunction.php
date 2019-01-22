@@ -97,7 +97,9 @@ class SapRfcFunction extends AbstractFunction
             /**
              * Do not trim strings containing line breaks.
              */
-            if (strtr($return, "\n") || strtr($return, "\r\n")) {
+            if (strpos($return, "\n") !== false
+                || strpos($return, "\r\n") !== false
+            ) {
                 return $return;
             }
             return rtrim($return);
