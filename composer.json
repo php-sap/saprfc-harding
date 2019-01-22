@@ -27,6 +27,7 @@
   },
   "conflict": {
     "php-sap/saprfc-koucky": "*",
+    "php-sap/saprfc-kralik": "*",
     "kba-team/php-sapnwrfc-harding": "*"
   },
   "minimum-stability": "stable",
@@ -34,7 +35,7 @@
     "php": "~5.5.0",
     "ext-sapnwrfc": "*",
     "php-sap/interfaces": "^1.0",
-    "php-sap/common": "^1.0"
+    "php-sap/common": "^2.0"
   },
   "require-dev": {
     "ext-json": "*",
