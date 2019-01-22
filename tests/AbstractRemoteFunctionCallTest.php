@@ -42,20 +42,4 @@ class AbstractRemoteFunctionCallTest extends \PHPUnit_Framework_TestCase
         $connection = $rfc->createConnectionInstance($config);
         static::assertInstanceOf(SapRfcConnection::class, $connection);
     }
-
-    /**
-     * Test getting an empty return typecast.
-     */
-    public function testGetReturnTypecast()
-    {
-        $config = new SapRfcConfigA([
-            'ashost' => 'sap.example.com',
-            'sysnr' => '001',
-            'client' => '002',
-            'user' => 'username',
-            'passwd' => 'password'
-        ]);
-        $rfc = new RemoteFunctionCall($config);
-        static::assertNull($rfc->getReturnTypecast());
-    }
 }
