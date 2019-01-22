@@ -57,7 +57,7 @@ class SapRfcFunction extends AbstractFunction
     protected function execute()
     {
         try {
-            return $this->function->invoke($this->params);
+            $result = $this->function->invoke($this->params);
         } catch (\Exception $exception) {
             throw new FunctionCallException(sprintf(
                 'Function call %s failed: %s',
@@ -65,6 +65,7 @@ class SapRfcFunction extends AbstractFunction
                 $exception->getMessage()
             ), 0, $exception);
         }
+        return $this->trimStrings($result);
     }
 
     /**
@@ -83,5 +84,29 @@ class SapRfcFunction extends AbstractFunction
                 $exception->getMessage()
             ), 0, $exception);
         }
+    }
+
+    /**
+     * Trim the strings of a given data structure.
+     * @param mixed $return
+     * @return mixed
+     */
+    protected function trimStrings($return)
+    {
+        if (is_string($return)) {
+            /**
+             * Do not trim strings containing line breaks.
+             */
+            if (strtr($return, "\n") || strtr($return, "\r\n")) {
+                return $return;
+            }
+            return rtrim($return);
+        }
+        if (is_array($return)) {
+            foreach ($return as $key => $value) {
+                $return[$key] = $this->trimStrings($value);
+            }
+        }
+        return $return;
     }
 }
