@@ -166,21 +166,21 @@ class SapRfcFunctionTest extends AbstractFunctionTestCase
                 throw new \Exception('unexpected parameters array!');
             }
             return [
-                'EV_FRIDAY'         => '20181123   ',
-                'EV_FRIDAY_LAST'    => '20181116   ',
-                'EV_FRIDAY_NEXT'    => '20181130   ',
-                'EV_FRITXT'         => 'Freitag    ',
-                'EV_MONDAY'         => '20181119   ',
-                'EV_MONDAY_LAST'    => '20181112   ',
-                'EV_MONDAY_NEXT'    => '20181126   ',
-                'EV_MONTH'          => '11         ',
-                'EV_MONTH_LAST_DAY' => '20181130   ',
-                'EV_MONTXT'         => 'Montag     ',
-                'EV_TIMESTAMP'      => 'NOVALUE    ',
-                'EV_WEEK'           => '201847     ',
-                'EV_WEEK_LAST'      => '201846     ',
-                'EV_WEEK_NEXT'      => '201848     ',
-                'EV_YEAR'           => '2018       '
+                'EV_FRIDAY'         => '20181123',
+                'EV_FRIDAY_LAST'    => '20181116',
+                'EV_FRIDAY_NEXT'    => '20181130',
+                'EV_FRITXT'         => 'Freitag        ',
+                'EV_MONDAY'         => '20181119',
+                'EV_MONDAY_LAST'    => '20181112',
+                'EV_MONDAY_NEXT'    => '20181126',
+                'EV_MONTH'          => '11',
+                'EV_MONTH_LAST_DAY' => '20181130',
+                'EV_MONTXT'         => 'Montag         ',
+                'EV_TIMESTAMP'      => '20181119000000',
+                'EV_WEEK'           => '201847',
+                'EV_WEEK_LAST'      => '201846',
+                'EV_WEEK_NEXT'      => '201848',
+                'EV_YEAR'           => '2018'
             ];
         });
     }
