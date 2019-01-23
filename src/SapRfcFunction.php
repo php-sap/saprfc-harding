@@ -28,11 +28,13 @@ use phpsap\exceptions\UnknownFunctionException;
 class SapRfcFunction extends AbstractFunction
 {
     /**
+     * PHP module connection object.
      * @var \sapnwrfc
      */
     protected $connection;
 
     /**
+     * PHP module function object.
      * @var \sapnwrfc_function
      */
     protected $function;
@@ -42,9 +44,8 @@ class SapRfcFunction extends AbstractFunction
      */
     public function __destruct()
     {
-        if ($this->function !== null) {
-            $this->function = null;
-        }
+        $this->connection = null;
+        $this->function = null;
     }
 
     /**
