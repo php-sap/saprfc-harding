@@ -35,12 +35,12 @@
     "php": "~5.5.0",
     "ext-sapnwrfc": "*",
     "php-sap/interfaces": "^1.0",
-    "php-sap/common": "^2.0"
+    "php-sap/common": "dev-master"
   },
   "require-dev": {
     "ext-json": "*",
     "phpunit/phpunit": "^4.8",
-    "php-sap/integration-tests": "^1.0"
+    "php-sap/integration-tests": "dev-php5"
   },
   "autoload": {
     "psr-4": {

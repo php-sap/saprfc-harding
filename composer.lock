@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3891198dfec097bdcf73c310c8ab8182",
+    "content-hash": "ce9999a1aa519bc9c509668a783074a2",
     "packages": [
         {
             "name": "php-sap/common",
-            "version": "v2.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-sap/common.git",
-                "reference": "dac961dc3c7b6d4e6d7e605d79f12b7931287cfd"
+                "reference": "b8c44683143fd4d122ef6928a49304b7d692f431"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-sap/common/zipball/dac961dc3c7b6d4e6d7e605d79f12b7931287cfd",
-                "reference": "dac961dc3c7b6d4e6d7e605d79f12b7931287cfd",
+                "url": "https://api.github.com/repos/php-sap/common/zipball/b8c44683143fd4d122ef6928a49304b7d692f431",
+                "reference": "b8c44683143fd4d122ef6928a49304b7d692f431",
                 "shasum": ""
             },
             "require": {
@@ -56,7 +56,7 @@
                 "PHPSAP",
                 "php-sap"
             ],
-            "time": "2019-01-22T09:08:12+00:00"
+            "time": "2019-01-23T11:06:58+00:00"
         },
         {
             "name": "php-sap/interfaces",
@@ -259,23 +259,23 @@
         },
         {
             "name": "php-sap/integration-tests",
-            "version": "v1.0.3",
+            "version": "dev-php5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-sap/integration-tests.git",
-                "reference": "02a2410da8a1683ad806a18ba57243217a3fc209"
+                "reference": "502ad6f6bb1aa5300bdfd6344167512162e49ce3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-sap/integration-tests/zipball/02a2410da8a1683ad806a18ba57243217a3fc209",
-                "reference": "02a2410da8a1683ad806a18ba57243217a3fc209",
+                "url": "https://api.github.com/repos/php-sap/integration-tests/zipball/502ad6f6bb1aa5300bdfd6344167512162e49ce3",
+                "reference": "502ad6f6bb1aa5300bdfd6344167512162e49ce3",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "kba-team/memory-container": "^1.0",
                 "php": "^5.5",
-                "php-sap/common": "^2.0",
+                "php-sap/common": "dev-master",
                 "php-sap/interfaces": "^1.0",
                 "phpunit/phpunit": "^4.8"
             },
@@ -298,7 +298,7 @@
             ],
             "description": "PHP/SAP integration tests.",
             "homepage": "https://php-sap.github.io/",
-            "time": "2019-01-22T09:19:45+00:00"
+            "time": "2019-01-23T11:26:20+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -1428,7 +1428,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "php-sap/common": 20,
+        "php-sap/integration-tests": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
