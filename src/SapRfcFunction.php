@@ -95,15 +95,7 @@ class SapRfcFunction extends AbstractFunction
     protected function trimStrings($return)
     {
         if (is_string($return)) {
-            /**
-             * Do not trim strings containing line breaks.
-             */
-            if (strpos($return, "\n") !== false
-                || strpos($return, "\r\n") !== false
-            ) {
-                return $return;
-            }
-            return rtrim($return);
+            return $this->rTrim($return);
         }
         if (is_array($return)) {
             foreach ($return as $key => $value) {
@@ -111,5 +103,23 @@ class SapRfcFunction extends AbstractFunction
             }
         }
         return $return;
+    }
+
+    /**
+     * Trim a string.
+     * @param string $string
+     * @return string
+     */
+    protected function rTrim($string)
+    {
+        /**
+         * Do not trim strings containing line breaks.
+         */
+        if (strpos($string, "\n") !== false
+            || strpos($string, "\r\n") !== false
+        ) {
+            return $string;
+        }
+        return rtrim($string);
     }
 }
