@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ce9999a1aa519bc9c509668a783074a2",
+    "content-hash": "3891198dfec097bdcf73c310c8ab8182",
     "packages": [
         {
             "name": "php-sap/common",
-            "version": "dev-master",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-sap/common.git",
@@ -259,23 +259,23 @@
         },
         {
             "name": "php-sap/integration-tests",
-            "version": "dev-php5",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-sap/integration-tests.git",
-                "reference": "bbf6f128c6be56ee7d0ae070039204d46371bc2c"
+                "reference": "9b2e64148f234cf877c4f630bb4905ccc14cb602"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-sap/integration-tests/zipball/bbf6f128c6be56ee7d0ae070039204d46371bc2c",
-                "reference": "bbf6f128c6be56ee7d0ae070039204d46371bc2c",
+                "url": "https://api.github.com/repos/php-sap/integration-tests/zipball/9b2e64148f234cf877c4f630bb4905ccc14cb602",
+                "reference": "9b2e64148f234cf877c4f630bb4905ccc14cb602",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "kba-team/memory-container": "^1.0",
                 "php": "^5.5",
-                "php-sap/common": "dev-master",
+                "php-sap/common": "^2.0",
                 "php-sap/interfaces": "^1.0",
                 "phpunit/phpunit": "^4.8"
             },
@@ -298,7 +298,7 @@
             ],
             "description": "PHP/SAP integration tests.",
             "homepage": "https://php-sap.github.io/",
-            "time": "2019-01-23T11:44:24+00:00"
+            "time": "2019-01-23T12:34:30+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -1428,10 +1428,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "php-sap/common": 20,
-        "php-sap/integration-tests": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
