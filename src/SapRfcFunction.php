@@ -51,9 +51,7 @@ class SapRfcFunction extends AbstractFunction
     /**
      * Execute the prepared function call.
      * @return array
-     * @throws \phpsap\exceptions\ConnectionFailedException
      * @throws \phpsap\exceptions\FunctionCallException
-     * @throws \phpsap\exceptions\UnknownFunctionException
      */
     protected function execute()
     {
@@ -113,11 +111,9 @@ class SapRfcFunction extends AbstractFunction
     protected function rTrim($string)
     {
         /**
-         * Do not trim strings containing line breaks.
+         * Do not trim strings containing non-printable characters.
          */
-        if (strpos($string, "\n") !== false
-            || strpos($string, "\r\n") !== false
-        ) {
+        if (!ctype_print($string)) {
             return $string;
         }
         return rtrim($string);
