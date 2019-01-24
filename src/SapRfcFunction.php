@@ -90,7 +90,7 @@ class SapRfcFunction extends AbstractFunction
      * @param mixed $return
      * @return mixed
      */
-    protected function trimStrings($return)
+    private function trimStrings($return)
     {
         if (is_string($return)) {
             return $this->rTrim($return);
@@ -108,7 +108,7 @@ class SapRfcFunction extends AbstractFunction
      * @param string $string
      * @return string
      */
-    protected function rTrim($string)
+    private function rTrim($string)
     {
         /**
          * Do not trim strings containing non-printable characters.
