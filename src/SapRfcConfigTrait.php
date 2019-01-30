@@ -39,6 +39,9 @@ trait SapRfcConfigTrait
             if ($this->has($keyLower)) {
                 $method = sprintf('get%s', ucfirst($keyLower));
                 $config[$key] = $this->{$method}();
+                if ($key === 'TRACE') {
+                    $config[$key] = $config[$key] > 0 ? true : false;
+                }
             } elseif ($mandatory === true) {
                 throw new IncompleteConfigException(sprintf(
                     'Missing mandatory key %s.',
