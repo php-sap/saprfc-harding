@@ -49,6 +49,22 @@ class SapRfcFunction extends AbstractFunction
     }
 
     /**
+     * Set function call parameter.
+     * @param string                           $name
+     * @param array|string|float|int|bool|null $value
+     * @return \phpsap\classes\AbstractFunction $this
+     * @throws \InvalidArgumentException
+     */
+    public function setParam($name, $value)
+    {
+        if (!is_array($value)) {
+            $value = (string) $value;
+        }
+        parent::setParam($name, $value);
+        return $this;
+    }
+
+    /**
      * Execute the prepared function call.
      * @return array
      * @throws \phpsap\exceptions\FunctionCallException
