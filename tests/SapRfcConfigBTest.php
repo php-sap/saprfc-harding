@@ -74,6 +74,6 @@ class SapRfcConfigBTest extends AbstractConfigBTestCase
         static::assertArrayHasKey('LANG', $configSaprfc);
         static::assertSame($lang, $configSaprfc['LANG']);
         static::assertArrayHasKey('TRACE', $configSaprfc);
-        static::assertSame($trace, $configSaprfc['TRACE']);
+        static::assertSame($trace > 0, $configSaprfc['TRACE']);
     }
 }
