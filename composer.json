@@ -23,7 +23,7 @@
     "harding"
   ],
   "provide": {
-    "php-sap/interfaces": "~1.0.0"
+    "php-sap/interfaces": "v2.x-dev"
   },
   "conflict": {
     "php-sap/saprfc-koucky": "*",
@@ -34,13 +34,13 @@
   "require": {
     "php": "~5.5.0",
     "ext-sapnwrfc": "*",
-    "php-sap/interfaces": "^1.0",
-    "php-sap/common": "^2.0"
+    "php-sap/interfaces": "v2.x-dev",
+    "php-sap/common": "v3.x-dev"
   },
   "require-dev": {
     "ext-json": "*",
     "phpunit/phpunit": "^4.8",
-    "php-sap/integration-tests": "^1.0"
+    "php-sap/integration-tests": "dev-php5"
   },
   "autoload": {
     "psr-4": {

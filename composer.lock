@@ -4,33 +4,31 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3891198dfec097bdcf73c310c8ab8182",
+    "content-hash": "eea8e31e44c65477f893ef3949eb6a23",
     "packages": [
         {
             "name": "php-sap/common",
-            "version": "v2.1.0",
+            "version": "v3.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-sap/common.git",
-                "reference": "b8c44683143fd4d122ef6928a49304b7d692f431"
+                "reference": "04ef97848b7b7ab17c3e076d63604ece94dab0a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-sap/common/zipball/b8c44683143fd4d122ef6928a49304b7d692f431",
-                "reference": "b8c44683143fd4d122ef6928a49304b7d692f431",
+                "url": "https://api.github.com/repos/php-sap/common/zipball/04ef97848b7b7ab17c3e076d63604ece94dab0a9",
+                "reference": "04ef97848b7b7ab17c3e076d63604ece94dab0a9",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "php": ">=5.5.0",
-                "php-sap/interfaces": "^1.0",
+                "php-sap/datetime": "^1.1",
+                "php-sap/interfaces": "v2.x-dev",
                 "psr/container": "^1.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8"
-            },
-            "suggest": {
-                "php-sap/datetime": "Cast and/or export SAP week date, time and timestamp formats to/from DateTime."
             },
             "type": "library",
             "autoload": {
@@ -56,23 +54,74 @@
                 "PHPSAP",
                 "php-sap"
             ],
-            "time": "2019-01-23T11:06:58+00:00"
+            "time": "2019-11-07T13:50:01+00:00"
         },
         {
-            "name": "php-sap/interfaces",
-            "version": "v1.0.1",
+            "name": "php-sap/datetime",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/php-sap/interfaces.git",
-                "reference": "ebea601d3408786aa9c29a151547443ace0bac00"
+                "url": "https://github.com/php-sap/datetime.git",
+                "reference": "caf2c0df6b6909d7d107388a501961aecee1ce43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-sap/interfaces/zipball/ebea601d3408786aa9c29a151547443ace0bac00",
-                "reference": "ebea601d3408786aa9c29a151547443ace0bac00",
+                "url": "https://api.github.com/repos/php-sap/datetime/zipball/caf2c0df6b6909d7d107388a501961aecee1ce43",
+                "reference": "caf2c0df6b6909d7d107388a501961aecee1ce43",
                 "shasum": ""
             },
             "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "phpsap\\DateTime\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gregor J.",
+                    "email": "gregor-j@users.noreply.github.com",
+                    "role": "developer"
+                }
+            ],
+            "description": "Extends PHP's DateTime class by SAP week, date, time and timestamp format.",
+            "keywords": [
+                "PHPSAP",
+                "date",
+                "datetime",
+                "php-sap",
+                "sap",
+                "time",
+                "timestamp",
+                "week"
+            ],
+            "time": "2019-01-21T13:28:53+00:00"
+        },
+        {
+            "name": "php-sap/interfaces",
+            "version": "v2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-sap/interfaces.git",
+                "reference": "c885680649baf9e5769842302235c6e0df8a9ba7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-sap/interfaces/zipball/c885680649baf9e5769842302235c6e0df8a9ba7",
+                "reference": "c885680649baf9e5769842302235c6e0df8a9ba7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
                 "php": ">=5.5.0"
             },
             "conflict": {
@@ -102,7 +151,7 @@
                 "interfaces",
                 "php-sap"
             ],
-            "time": "2019-04-01T14:06:33+00:00"
+            "time": "2019-10-30T15:27:23+00:00"
         },
         {
             "name": "psr/container",
@@ -259,24 +308,25 @@
         },
         {
             "name": "php-sap/integration-tests",
-            "version": "v1.0.5",
+            "version": "dev-php5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-sap/integration-tests.git",
-                "reference": "e25ef9bea55b6d62273d4f989a5961a75a80dbc2"
+                "reference": "b15b6411b42ca970bf76b5527ddb8c16059f8c5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-sap/integration-tests/zipball/e25ef9bea55b6d62273d4f989a5961a75a80dbc2",
-                "reference": "e25ef9bea55b6d62273d4f989a5961a75a80dbc2",
+                "url": "https://api.github.com/repos/php-sap/integration-tests/zipball/b15b6411b42ca970bf76b5527ddb8c16059f8c5c",
+                "reference": "b15b6411b42ca970bf76b5527ddb8c16059f8c5c",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "kba-team/memory-container": "^1.0",
                 "php": "^5.5",
-                "php-sap/common": "^2.0",
-                "php-sap/interfaces": "^1.0",
+                "php-sap/common": "v3.x-dev",
+                "php-sap/datetime": "^1.1",
+                "php-sap/interfaces": "v2.x-dev",
                 "phpunit/phpunit": "^4.8"
             },
             "type": "library",
@@ -298,7 +348,7 @@
             ],
             "description": "PHP/SAP integration tests.",
             "homepage": "https://php-sap.github.io/",
-            "time": "2019-10-29T16:12:41+00:00"
+            "time": "2019-11-07T14:05:22+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -883,6 +933,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2015-10-02T06:51:40+00:00"
         },
         {
@@ -1427,7 +1478,11 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "php-sap/interfaces": 20,
+        "php-sap/common": 20,
+        "php-sap/integration-tests": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
