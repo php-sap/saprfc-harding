@@ -40,7 +40,7 @@
   "require-dev": {
     "ext-json": "*",
     "phpunit/phpunit": "^4.8",
-    "php-sap/integration-tests": "dev-php5"
+    "php-sap/integration-tests": "dev-php5-v3"
   },
   "autoload": {
     "psr-4": {
