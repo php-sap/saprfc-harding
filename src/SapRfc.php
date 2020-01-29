@@ -216,6 +216,18 @@ class SapRfc extends AbstractFunction
                 ->getFunction()
                 ->invoke($params);
         } catch (Exception $exception) {
+            /**
+             * sapnwrfc_function::invoke() only throws \Exception. Therefore we
+             * distinguish between the exceptions thrown by PHP/SAP and the
+             * exceptions thrown by sapnwrfc_function::invoke().
+             */
+            if (
+                $exception instanceof ConnectionFailedException
+                || $exception instanceof IncompleteConfigException
+                || $exception instanceof UnknownFunctionException
+            ) {
+                throw $exception;
+            }
             throw new FunctionCallException(sprintf(
                 'Function call %s failed: %s',
                 $this->getName(),
