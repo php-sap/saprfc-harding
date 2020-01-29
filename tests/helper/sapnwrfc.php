@@ -24,7 +24,7 @@ class sapnwrfc
     public function __construct($config)
     {
         $func = \phpsap\IntegrationTests\SapRfcModuleMocks::singleton()
-            ->get('sapnwrfc::'.__FUNCTION__);
+            ->get('sapnwrfc::' . __FUNCTION__);
         $func($config);
     }
 
@@ -35,7 +35,7 @@ class sapnwrfc
     public function ping()
     {
         $func = \phpsap\IntegrationTests\SapRfcModuleMocks::singleton()
-            ->get('sapnwrfc::'.__FUNCTION__);
+            ->get('sapnwrfc::' . __FUNCTION__);
         return $func();
     }
 
@@ -47,7 +47,7 @@ class sapnwrfc
     public function function_lookup($name)
     {
         $func = \phpsap\IntegrationTests\SapRfcModuleMocks::singleton()
-            ->get('sapnwrfc::'.__FUNCTION__);
+            ->get('sapnwrfc::' . __FUNCTION__);
         return $func($name);
     }
 
@@ -57,7 +57,7 @@ class sapnwrfc
     public function close()
     {
         $func = \phpsap\IntegrationTests\SapRfcModuleMocks::singleton()
-            ->get('sapnwrfc::'.__FUNCTION__);
+            ->get('sapnwrfc::' . __FUNCTION__);
         $func();
     }
 }
@@ -71,7 +71,7 @@ class sapnwrfc_function
     public function __construct($name)
     {
         $func = \phpsap\IntegrationTests\SapRfcModuleMocks::singleton()
-            ->get('sapnwrfc_function::'.__FUNCTION__);
+            ->get('sapnwrfc_function::' . __FUNCTION__);
         $func($name);
     }
 
@@ -83,7 +83,7 @@ class sapnwrfc_function
     public function invoke($params)
     {
         $func = \phpsap\IntegrationTests\SapRfcModuleMocks::singleton()
-            ->get('sapnwrfc_function::'.__FUNCTION__);
+            ->get('sapnwrfc_function::' . __FUNCTION__);
         return $func($params);
     }
 }
