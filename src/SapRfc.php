@@ -164,7 +164,7 @@ class SapRfc extends AbstractFunction
             } catch (SapLogicException $exception) {
                 /**
                  * InvalidArgumentException is a child of SapLogicException and will
-                 * be catched too.
+                 * be caught too.
                  */
                 throw new ConnectionFailedException(
                     'The API behaved unexpectedly: ' . $exception->getMessage(),
@@ -212,7 +212,9 @@ class SapRfc extends AbstractFunction
          * Invoke SAP remote function call.
          */
         try {
-            $result = $this->function->invoke($params);
+            $result = $this
+                ->getFunction()
+                ->invoke($params);
         } catch (Exception $exception) {
             throw new FunctionCallException(sprintf(
                 'Function call %s failed: %s',
