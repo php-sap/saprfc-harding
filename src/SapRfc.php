@@ -200,7 +200,6 @@ class SapRfc extends AbstractFunction
          */
         $params = array_merge(
             $this->getInputParams(
-                $this->getName(),
                 $this->getApi()->getInputValues(),
                 $this->getParams()
             ),

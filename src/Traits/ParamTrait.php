@@ -17,13 +17,12 @@ trait ParamTrait
     /**
      * Generate a function call parameter array from a list of known input values
      * and the previously set parameters.
-     * @param string                      $name Function call name for the exception.
      * @param \phpsap\classes\Api\Value[] $inputs API input values.
      * @param array                       $params Parameters
      * @return array
      * @throws \phpsap\exceptions\FunctionCallException
      */
-    private function getInputParams($name, $inputs, $params)
+    private function getInputParams($inputs, $params)
     {
         $result = [];
         foreach ($inputs as $input) {
@@ -34,7 +33,7 @@ trait ParamTrait
                 throw new FunctionCallException(sprintf(
                     'Missing parameter \'%s\' for function call \'%s\'!',
                     $key,
-                    $name
+                    $this->getName()
                 ));
             }
         }
