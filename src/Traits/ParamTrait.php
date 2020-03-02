@@ -28,7 +28,7 @@ trait ParamTrait
         foreach ($inputs as $input) {
             $key = $input->getName();
             if (array_key_exists($key, $params)) {
-                $result[$key] = $params[$key];
+                $result[$key] = $this->typeCastParam($params[$key]);
             } elseif (!$input->isOptional()) {
                 throw new FunctionCallException(sprintf(
                     'Missing parameter \'%s\' for function call \'%s\'!',
@@ -38,6 +38,25 @@ trait ParamTrait
             }
         }
         return $result;
+    }
+
+    /**
+     * Typecast a remote function call parameter.
+     *
+     * The SAPNWRFC module by Piers Harding on PHP 5.5 would throw an exception
+     * in case parameters were anything other than strings. All other modules
+     * (saprfc by Koucky on PHP 5.5 and sapnwrfc by Kralik on PHP 7.x) don't
+     * behave that way.
+     *
+     * @param mixed $param The parameter to typecast.
+     * @return string|array
+     */
+    private function typeCastParam($param)
+    {
+        if (is_array($param) || is_string($param)) {
+            return $param;
+        }
+        return (string)$param;
     }
 
     /**
