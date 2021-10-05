@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1dd575626147be766611c8a06df1d672",
+    "content-hash": "dd999ebd1db1175093348587929ce6a9",
     "packages": [
         {
             "name": "php-sap/common",
@@ -755,6 +755,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2017-12-04T08:55:13+00:00"
         },
         {

@@ -25,7 +25,8 @@
   "conflict": {
     "php-sap/saprfc-koucky": "*",
     "php-sap/saprfc-kralik": "*",
-    "kba-team/php-sapnwrfc-harding": "*"
+    "kba-team/php-sapnwrfc-harding": "*",
+    "kba-team/php-sapnwrfc-kralik": "*"
   },
   "minimum-stability": "stable",
   "require": {
