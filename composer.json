@@ -22,9 +22,6 @@
     "remote function call",
     "harding"
   ],
-  "provide": {
-    "php-sap/interfaces": "^2.0"
-  },
   "conflict": {
     "php-sap/saprfc-koucky": "*",
     "php-sap/saprfc-kralik": "*",
